@@ -7,7 +7,8 @@ const getFoodList = () => {
     });
 };
 const displayFood = (data, inputText) => {
-  const showFood = document.getElementById("show-food");
+  let showFood = document.getElementById("show-food");
+  showFood.innerHTML = "";
   if (
     inputText == null ||
     inputText == 0 ||
@@ -22,7 +23,7 @@ const displayFood = (data, inputText) => {
     showFood.innerHTML = showData;
   } else {
     data.meals.forEach((meal) => {
-      const foodContainerDiv = document.createElement("div");
+      let foodContainerDiv = document.createElement("div");
       foodContainerDiv.className = "col-4  p-5 item rounded-3";
       const foodInfo = `
       <div onClick="mealsInfo('${meal.idMeal}')" class="card" style="width: 18rem;">
@@ -36,6 +37,7 @@ const displayFood = (data, inputText) => {
       foodContainerDiv.innerHTML = foodInfo;
       showFood.appendChild(foodContainerDiv);
     });
+    let searchFood = (document.getElementById("input-text").value = "");
   }
 };
 const mealsInfo = (id) => {
