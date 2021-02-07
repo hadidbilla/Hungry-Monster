@@ -7,7 +7,7 @@ const getFoodList = () => {
     });
 };
 const displayFood = (data, inputText) => {
-  const showFood = document.getElementById("show-food");
+  let showFood = document.getElementById("show-food");
   if (
     inputText == null ||
     inputText == 0 ||
@@ -23,8 +23,8 @@ const displayFood = (data, inputText) => {
   } else {
     data.meals.forEach((meal) => {
       const foodContainerDiv = document.createElement("div");
-      foodContainerDiv.className = "col-4  p-5 rounded-3 ";
-      const foodInfo = `
+      foodContainerDiv.className = "col-4  p-5 rounded-3 items";
+      let foodInfo = `
       <div onClick="mealsInfo('${meal.idMeal}')" class="card shadow-lg text-center cd-body" style="width: 18rem; item">
         <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
         <div class="card-body text-bg">

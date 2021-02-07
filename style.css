@@ -27,3 +27,6 @@
   color: white;
   border: 0px none;
 }
+.items:hover {
+  cursor: pointer;
+}
