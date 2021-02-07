@@ -1,6 +1,6 @@
 const getFoodList = () => {
   let searchFood = document.getElementById("input-text").value;
-  fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchFood}`)
+  fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchFood}`)
     .then((response) => response.json())
     .then((data) => {
       displayFood(data, searchFood);
