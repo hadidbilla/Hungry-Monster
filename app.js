@@ -57,4 +57,5 @@ const renderMealInfo = (data) => {
   document.getElementById("strIngredient5").innerText = data.strIngredient5;
   document.getElementById("strMeasure1").innerText = data.strMeasure1;
   document.getElementById("strMeal").innerText = data.strMeal;
+  document.getElementById("strMeasure3").innerText = data.strMeasure3;
 };
