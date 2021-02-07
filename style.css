@@ -1,0 +1,15 @@
+#input-text {
+  width: 50%;
+  height: 50px;
+}
+#show-food a {
+  text-decoration: none;
+  color: black;
+}
+.search-area .single-food {
+  align-items: center;
+  margin-bottom: 20px;
+}
+#single-food {
+  display: none;
+}
