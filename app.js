@@ -23,12 +23,12 @@ const displayFood = (data, inputText) => {
   } else {
     data.meals.forEach((meal) => {
       const foodContainerDiv = document.createElement("div");
-      foodContainerDiv.className = "col-4  p-5 item rounded-3";
+      foodContainerDiv.className = "col-4  p-5 rounded-3 ";
       const foodInfo = `
-      <div onClick="mealsInfo('${meal.idMeal}')" class="card" style="width: 18rem;">
+      <div onClick="mealsInfo('${meal.idMeal}')" class="card shadow-lg text-center cd-body" style="width: 18rem; item">
         <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">${meal.strMeal}</p>
+        <div class="card-body text-bg">
+            <p class="card-text"><strong>${meal.strMeal}</strong></p>
         </div>
     </div>
     
@@ -36,6 +36,7 @@ const displayFood = (data, inputText) => {
       foodContainerDiv.innerHTML = foodInfo;
       showFood.appendChild(foodContainerDiv);
     });
+    let searchFood = (document.getElementById("input-text").value = "");
   }
 };
 const mealsInfo = (id) => {

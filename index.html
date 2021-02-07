@@ -14,9 +14,10 @@
     <div class="nav-area">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light ">
-                <div class="container-fluid">
+                <div class="container-fluid ">
                     <a style="font-size: 25.4255px;" class="navbar-brand d-flex align-items-center" href="#">
-                        <h4 style="margin-top: 5px;"><span><strong>Hungry</strong></span>
+                        <h4 style="margin-top: 5px; color: #4D0D4F;
+                        ;"><span><strong>Hungry</strong></span>
                             <strong>Master</strong></h4>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,13 +38,13 @@
             </nav>
         </div>
     </div>
-    <div id="top" class="search-area container mt-5 ">
+    <div id="top" class="search-area container mt-5">
         <div class="d-flex justify-content-center">
             <input id="input-text" type="text" placeholder="Search your food" class="form-control">
-            <button onclick="getFoodList()" class="btn btn-success" type="submit">Search</button>
+            <button onclick="getFoodList()" class="btn btn-success search-btn" type="submit">Search</button>
         </div>
         <div class="d-flex justify-content-center mt-5">
-            <div id="single-food" class="card" style="width: 18rem;">
+            <div id="single-food" class="card shadow-lg cd-body" style="width: 18rem;">
                 <img id="image" src="" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 id="strMeal" class="card-title"></h5>
@@ -56,7 +57,7 @@
                 </ul>
             </div>
         </div>
-        <div id="show-food" class="container row mt-5">
+        <div id="show-food" class="container row mt-5 ">
         </div>
     </div>
 

@@ -13,3 +13,17 @@
 #single-food {
   display: none;
 }
+.text-bg {
+  background-color: #f8f7f5;
+}
+.item {
+  border: 0px none;
+}
+.cd-body {
+  border: 0px none;
+}
+.search-btn {
+  background-color: #f06c4e;
+  color: white;
+  border: 0px none;
+}
