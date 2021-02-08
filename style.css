@@ -29,4 +29,5 @@
 }
 .items:hover {
   cursor: pointer;
+  color: #f06c4e;
 }
